@@ -1,38 +1,29 @@
-  <!DOCTYPE html>
-    
-  <html>
-    <head>
-   <title>Andrae Delisser, Aspiring Data Scientist</title>
-    <!-- link to main stylesheet -->
-    <link rel="stylesheet" type="text/css" href="/css/main.css">
-  
- </head>
-    <body>
-     <nav>
-  <ul>
-    <li><a href="/">Home</a></li>
-    <li><a href="/about">About</a></li>
-    <li><a href="/cv">CV</a></li>
-    <li><a href="/blog">Blog</a></li>
-    </ul>
-    </nav>
-    <div class="container">
-    <div class="blurb">
-    <h1>Hi there, I'm Andrae Delisser !</h1>
-    <p>Recently completed Machine Learning
-  Engineer Nanodegree from Udcaity. <a href="/about">Read more about my life...</a></p>
-       </div><!-- /.blurb -->
-      </div><!-- /.container -->
-    <footer>
-     <ul>  
-  <li><a href="mailto:delisserad@gmail.com">email</a></li>
-    <li><a href="https://github.com/dredel7">dredel7.github.io</a></li>
-    </ul>  
-  </footer>
-   </body>
-    </html>
-  
- 
-
-
-
+<!DOCTYPE html>
+	<html>
+		<head>
+			<title>{{ page.title }}</title>
+			<!-- link to main stylesheet -->
+			<link rel="stylesheet" type="text/css" href="/css/main.css">
+		</head>
+		<body>
+			<nav>
+	    		<ul>
+	        		<li><a href="/">Home</a></li>
+		        	<li><a href="/about">About</a></li>
+	        		<li><a href="/cv">CV</a></li>
+	        		<li><a href="/blog">Blog</a></li>
+	    		</ul>
+			</nav>
+			<div class="container">
+			
+			{{ content }}
+			
+			</div><!-- /.container -->
+			<footer>
+	    		<ul>
+	        		<li><a href="mailto:delisserad@gmail.com">email</a></li>
+	        		<li><a href="https://github.com/dredel7">dredel7.github.io</a></li>
+				</ul>
+			</footer>
+		</body>
+	</html>
