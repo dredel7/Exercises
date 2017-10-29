@@ -1,3 +1,36 @@
-<h1> Stock Predictor </h1>
+<html>
+	<head>
+		<title>Stock Predictor</title>
+	</head>
+	<body>
 
+      <h1> Stock Predictor </h1>
 
+      <p> For this project, the task is to predict the Adjusted Close Price of a stock, but for learning
+        purposes and efficiency we will be looking at predicting the Russell 3000 index itself. I will be
+        using five values illustrating movements in the price over one unit of time. The inputs would be
+        trading data for the Russell 3000 over 5 day period, 1 month and 1 year time period The key
+        trading indicators are :
+        ● Open: The starting price for a given trading day.
+        ● Close:The final price on that day.
+        ● High: The highest prices at which the stock traded on that day.
+        ● Low: The lowest prices at which the stock traded on that day.
+        ● Volume: The total number of shares traded before the market is closed on that day.
+      </p>
+
+      <p>From these data I will generate new features associated with the price trend by computing ratios
+      between each pair of average price in three different time frames. Example, the ratio between
+      the average price over the past week and over that past year. The volume is another important
+      factor that investors analyze. Similarly, we can generate new volume-based features by
+      computing the average volumes in several different time frames and ratios between each pair of
+      averaged values.
+      </p>
+      <p>
+      Stock volatility will be taken into consideration as well and as such we will use a standard
+      deviation indicator; in this case we will use standard deviation of close prices in a particular time
+      frame as well as standard deviation of volumes traded. The moving average of returns will also
+      be an indicator I will employ.
+    </p>
+    
+  </body>
+</html>
