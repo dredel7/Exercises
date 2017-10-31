@@ -50,30 +50,30 @@
 	
 		
 		<div id="slideshow">
-   			<div>
-    			 <img src="ml.jpg">
- 			  </div>
-  		 <div>
+   		   <div>
+    		      <img src="ml.jpg">
+ 		    </div>
+  		   <div>
      			<img src="AT.png">
-   		</div>
-  			 <div> 
-     			<img src="S-cars.png">
-   		</div>
-    			 <div>
+   		   </div>
+  		   <div> 
+     		       <img src="S-cars.png">
+   		   </div>
+    	           <div>
      			<img src="NN.png">
-   		</div>
- 	  </div>
-	</div>
+   		   </div>
+ 	  	</div>
+	
 		$("#slideshow > div:gt(0)").hide();
 
-			setInterval(function() { 
-			  $('#slideshow > div:first')
-			    .fadeOut(1000)
-			    .next()
-			    .fadeIn(1000)
-			    .end()
-			    .appendTo('#slideshow');
-			},  3000);
-	
+		setInterval(function() { 
+		  $('#slideshow > div:first')
+		    .fadeOut(1000)
+		    .next()
+		    .fadeIn(1000)
+		    .end()
+		    .appendTo('#slideshow');
+		},  3000);
+
 	</body>	
 </html>
