@@ -27,7 +27,22 @@ a:hover {
     background:gray;
     
 }
+.crop-img{
+  max-height:150px;
+  max-width:100%;
+}
 
+.large-img{
+  max-width:100%;
+}
+
+.carousel-img{
+    margin: auto;
+    padding: 10px;
+    max-height:300px;
+    max-width:100%;
+
+}
 #slideshow { 
     margin: 50px auto; 
     position: relative; 
