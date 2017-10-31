@@ -44,34 +44,36 @@
 			Contact me
 		</a>
 			 
-		<hr> 
-		    <hr size=10px>
+		<hr size=10px>
 		</hr>
 	
 	</body>
 		
-<div id="slideshow">
-   <div>
-     <img src="Ml.jpg">
-   </div>
-   <div>
-     <img src="NN.png">
-   </div>
-   <div>
-     Pretty cool eh? This slide is proof the content can be anything.
-   </div>
-</div>
+		<div id="slideshow">
+   			<div>
+    			 <img src="ml.jpg">
+ 			  </div>
+  		 <div>
+     			<img src="AT.png">
+   		</div>
+  			 <div> 
+     			<img src="S-cars.png">
+   		</div>
+    			 <div>
+     			<img src="NN.png">
+   		</div>
+ 	  </div>
+	</div>
+		$("#slideshow > div:gt(0)").hide();
 
-$("#slideshow > div:gt(0)").hide();
-
-setInterval(function() { 
-  $('#slideshow > div:first')
-    .fadeOut(1000)
-    .next()
-    .fadeIn(1000)
-    .end()
-    .appendTo('#slideshow');
-},  3000);
+			setInterval(function() { 
+			  $('#slideshow > div:first')
+			    .fadeOut(1000)
+			    .next()
+			    .fadeIn(1000)
+			    .end()
+			    .appendTo('#slideshow');
+			},  3000);
 	<script>
 		// whether the slideshow is paused or not
 		var paused = false;
